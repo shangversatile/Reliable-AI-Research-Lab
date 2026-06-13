@@ -10,7 +10,7 @@
 
 | Task | Rationale | Evidence Required | Artifact | Status |
 | ---- | --------- | ----------------- | -------- | ------ |
-| Establish clean baselines on KnowAir PM2.5 | Baselines are required before UQ or shift claims | Split logic, seeds, metric definitions, baseline outputs | Baseline report | Planned |
+| Establish clean baselines on the PM2.5 dataset selected through the dataset-selection gate | Baselines are required before UQ or shift claims | Split logic, seeds, metric definitions, baseline outputs | Baseline report | Planned |
 
 ## Week 2: UQ and Calibration
 
@@ -48,8 +48,8 @@
 | ---- | --------- | ----------------- | -------- | ------ |
 | Compare prediction-only and prediction-reconstruction latent behavior | Representation diagnostics should explain concrete MVP failures | Latent outputs, diagnostic question, calibration and decision links | Representation stability note | Planned |
 
-## Week 8: External Validation and Advisor Materials
+## Week 8: External Validation and Research Communication
 
 | Task | Rationale | Evidence Required | Artifact | Status |
 | ---- | --------- | ----------------- | -------- | ------ |
-| Prepare external validation plan and advisor materials | Outreach needs reproducible evidence rather than broad claims | Project summary, evidence tables, limitation log | Advisor packet | Planned |
+| Prepare external validation plan and research communication materials | External communication needs reproducible evidence rather than broad claims | Project summary, evidence tables, limitation log | Research communication packet | Planned |

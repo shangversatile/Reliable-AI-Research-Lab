@@ -9,7 +9,7 @@ Calibration, Uncertainty Quantification and Risk-Aware Decision-Making
 
 Research-protocol initialization.
 
-No thesis code has been migrated.
+No prior prototype code has been migrated.
 
 No experimental results are claimed.
 
@@ -20,6 +20,5 @@ No experimental results are claimed.
 * `reports/model-relearning-plan.md`
 * `reports/innovation-and-critique-map.md`
 * `reports/experiment-protocol.md`
-* `reports/advisor-alignment.md`
 * `reports/planned-code-structure.md`
 * `templates/experiment-record-template.md`

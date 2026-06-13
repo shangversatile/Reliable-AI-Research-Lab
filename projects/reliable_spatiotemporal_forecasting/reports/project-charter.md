@@ -8,7 +8,7 @@ The project studies whether spatiotemporal forecasting models remain reliable wh
 
 The project inherits a problem family, not a codebase.
 
-Prior thesis observations are hypotheses, not evidence.
+Prior prototype observations are hypotheses, not evidence.
 
 Baselines will be relearned and independently implemented.
 
@@ -56,7 +56,14 @@ H4 belongs to the Week 7 extension.
 
 ## Dataset
 
-KnowAir PM2.5 only for the MVP.
+The MVP will use a PM2.5 forecasting dataset selected through
+the dataset-selection gate.
+
+Original KnowAir and KnowAir-V2 remain candidates until
+schema, missingness, reproducibility, licensing,
+and implementation-cost evidence are reviewed.
+
+No MVP dataset is locked yet.
 
 ## Chronological Split
 
@@ -90,7 +97,9 @@ Compare Mean Policy, Risk-Averse Policy, Upper-Quantile Policy, and simplified a
 
 ## MVP Scope
 
-Reproducible baselines, UQ and calibration, shift stress testing, and decision reliability for KnowAir PM2.5.
+Reproducible baselines, UQ and calibration, shift stress testing,
+and decision reliability for the PM2.5 dataset selected through
+the dataset-selection gate.
 
 ## Stretch Goals
 
@@ -114,6 +123,6 @@ Stop or rescope if split logic cannot be verified, metrics cannot be reproduced,
 * six core figures
 * one-page project summary
 * research-style short report
-* advisor-specific summaries
-* advisor-alignment evidence packet
+* external-facing project summaries
+* research-positioning evidence packet
 * Week 7 representation-stability extension only if justified by MVP evidence

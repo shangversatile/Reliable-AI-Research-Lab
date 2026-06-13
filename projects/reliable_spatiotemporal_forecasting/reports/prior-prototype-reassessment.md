@@ -2,7 +2,7 @@
 
 ## Principle
 
-The undergraduate thesis is a prior prototype,
+The earlier prototype is a prior prototype,
 not the implementation foundation of the new research project.
 
 Preserve promising questions and historical observations,

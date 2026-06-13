@@ -2,7 +2,7 @@
 
 ## Principle
 
-Do not assume that the prior thesis methods are correct,
+Do not assume that the prior prototype methods are correct,
 sufficient, or theoretically justified.
 
 | Prior Idea | Critical Question | Why Existing Evidence May Be Insufficient | Minimal Falsification Test | Possible New Direction | Status |
@@ -13,4 +13,4 @@ sufficient, or theoretically justified.
 | Top-K allocation | Is the ranking policy compatible with the uncertainty output? | Ranking by predicted mean may ignore interval quality, tail risk, and review thresholds. | Compare mean, upper-quantile, risk-averse, and abstention policies. | Design uncertainty-aware allocation and review policies. | Candidate |
 | lambda risk-aversion coefficient | Is lambda connected to an interpretable risk preference? | A tuned coefficient may not correspond to a meaningful operational trade-off. | Sweep lambda and report cost, tail risk, review rate, and constraint violations. | Reparameterize risk preference through explicit decision costs or CVaR targets. | Candidate |
 | Gaussian noise | Is the corruption protocol too artificial? | Gaussian noise may not represent missingness, spike anomalies, station shift, or extreme events. | Compare Gaussian noise with spike anomalies, missingness, temporal shift, and extreme-event subsets. | Build a shift taxonomy with operationally meaningful severity levels. | Candidate |
-| PM2.5 application | Is the environmental framing scientifically meaningful, or is the dataset being used only as a benchmark? | A benchmark-only framing may miss domain constraints, extreme events, and interpretation needs. | Document scientific assumptions, station behavior, and failure cases before advisor-facing claims. | Connect reliability evaluation to environmental forecasting decisions and limitations. | Candidate |
+| PM2.5 application | Is the environmental framing scientifically meaningful, or is the dataset being used only as a benchmark? | A benchmark-only framing may miss domain constraints, extreme events, and interpretation needs. | Document scientific assumptions, station behavior, and failure cases before external-facing claims. | Connect reliability evaluation to environmental forecasting decisions and limitations. | Candidate |

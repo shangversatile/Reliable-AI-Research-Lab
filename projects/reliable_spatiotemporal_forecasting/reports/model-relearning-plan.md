@@ -7,6 +7,7 @@ Rebuild understanding before implementation.
 | Module | Core Questions | Primary-Source Reading Needed | Derivation or Explanation Required | Minimal Verification Task | Status |
 | ------ | -------------- | ----------------------------- | ---------------------------------- | ------------------------- | ------ |
 | forecasting task definition | What is predicted, at what horizon, and under what data assumptions? | Required before implementation | Formal task statement and target definition | Write task definition and expected inputs/outputs | Planned |
+| dataset selection gate | Should the MVP use original KnowAir or KnowAir-V2? | P-ST-003 and verified dataset documentation | Compare schema, time span, missingness, graph assumptions, and MVP implementation cost | Complete dataset-selection-review.md before implementation | Planned |
 | chronological split and normalization | How are temporal order and training-only statistics preserved? | Required before implementation | Split rationale and leakage analysis | Specify train, validation, calibration, and test protocol | Planned |
 | graph construction | What graph is used and why is it meaningful? | Required before implementation | Graph assumption explanation | Define graph candidates and sensitivity checks | Planned |
 | graph convolution foundations | What operation is being applied over graph structure? | Required before implementation | Derive or explain graph convolution mechanism | Explain how graph convolution uses adjacency information | Planned |

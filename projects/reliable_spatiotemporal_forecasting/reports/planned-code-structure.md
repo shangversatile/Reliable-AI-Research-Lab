@@ -12,7 +12,7 @@ results/
 tests/
 ```
 
-Actual implementation folders will be created only after the thesis-asset audit.
+Actual implementation folders will be created only after the prior-prototype reassessment.
 
 Public interfaces must be chosen after reviewing old code.
 

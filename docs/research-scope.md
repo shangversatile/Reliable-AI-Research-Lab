@@ -10,7 +10,7 @@ Forecasting systems used in environmental contexts can fail under shift even whe
 
 ## Research Reboot Principle
 
-Do not treat the old thesis as a finished research artifact.
+Do not treat the prior prototype as a finished research artifact.
 
 Do not inherit old assumptions by default.
 
@@ -35,7 +35,9 @@ Compare with the prior prototype only after the new baseline protocol exists.
 
 Dataset:
 
-* KnowAir PM2.5 only
+* A PM2.5 forecasting dataset selected through the dataset-selection gate
+* Original KnowAir and KnowAir-V2 remain candidates until evidence review is complete
+* No MVP dataset is locked before schema, missingness, reproducibility, licensing, and implementation-cost review
 
 Baselines:
 
@@ -103,7 +105,7 @@ Metrics:
 
 ## Non-Goals
 
-* no direct thesis-code dump
+* no direct prototype-code dump
 * no benchmark-only project
 * no diffusion forecasting
 * no foundation-model forecasting
@@ -118,5 +120,5 @@ Metrics:
 * documented shift stress tests
 * UQ and calibration evaluation
 * decision-reliability analysis
-* advisor-ready evidence packet
+* external-facing research evidence packet
 * Week 7 representation-stability extension only if the MVP creates a concrete diagnostic question

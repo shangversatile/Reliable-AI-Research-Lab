@@ -4,34 +4,40 @@
 
 A research repository for reliable and trustworthy AI systems.
 
+The repository focuses on building reproducible evaluation protocols,
+identifying failure modes, and studying how uncertainty estimates
+should influence downstream decisions.
+
 ## Active Flagship Project
 
 Reliable Spatiotemporal Forecasting under Dynamic Distribution Shift:
-Calibration, Uncertainty Quantification and Risk-Aware Decision-Making
+Calibration, Uncertainty Quantification, and Risk-Aware Decision-Making
+
+## Research Approach
+
+The flagship project follows a research-reboot approach.
+
+Earlier prototypes are treated as historical reference points
+rather than implementation foundations.
+
+The project relearns the model stack,
+critically reassesses assumptions,
+designs an independent evaluation protocol,
+and reimplements trustworthy baselines before considering
+selective adaptation of prior ideas.
 
 ## Current Status
 
-* research-protocol initialization
-* no migrated thesis code yet
+* literature curriculum initialized
+* research questions and falsifiable hypotheses defined
+* dataset-selection review in progress
+* model relearning stage in progress
 * no claimed experimental results yet
-* no parallel implementation of backlog projects
-
-## Research Reboot Principle
-
-The active flagship project is not a direct continuation,
-cleanup, or packaging exercise for an undergraduate thesis.
-
-The earlier thesis is treated only as a prior prototype,
-a source of initial questions, and a historical comparison point.
-
-The new project will relearn the model stack,
-critically reassess assumptions,
-design an independent evaluation protocol,
-and reimplement trustworthy baselines before considering
-any selective reuse of prior code.
 
 ## Relationship to Other Repositories
 
-* Paper-Reading-Notes supplies literature and research questions.
-* ML-DL-NLP-Lab is a separately maintained foundations repository.
-* Representation-Analysis-Lab will activate only after the MVP creates a concrete diagnostic question.
+* `Paper-Reading-Notes` supplies verified literature maps,
+  critical reading records, and research questions.
+* `ML-DL-NLP-Lab` is a separately maintained foundations repository.
+* `Representation-Analysis-Lab` will activate only after the flagship MVP
+  exposes a concrete representation-level diagnostic question.
