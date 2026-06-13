@@ -1,0 +1,16 @@
+# Innovation and Critique Map
+
+## Principle
+
+Do not assume that the prior thesis methods are correct,
+sufficient, or theoretically justified.
+
+| Prior Idea | Critical Question | Why Existing Evidence May Be Insufficient | Minimal Falsification Test | Possible New Direction | Status |
+| ---------- | ----------------- | ----------------------------------------- | -------------------------- | ---------------------- | ------ |
+| Robust-STGCN | What does robustness mean operationally beyond MAE? | Average error may hide calibration failure, tail risk, and decision instability. | Compare error, coverage, tail risk, and decision cost under controlled shifts. | Define reliability as a multi-metric stress-test profile. | Candidate |
+| prediction-reconstruction objective | Does reconstruction improve useful representations, or merely act as generic regularization? | Reconstruction loss may improve training stability without improving calibration or decisions. | Compare representation stability, calibration, and decision cost against prediction-only baselines. | Treat prediction-reconstruction as a candidate intervention tied to falsifiable diagnostics. | Candidate |
+| MC Dropout | Does uncertainty remain informative under shift, or does the model become overconfident? | Near-IID uncertainty behavior may not transfer to temporal shift, missingness, or anomalies. | Measure coverage gap, sharpness, selective risk, and decision cost across shift types. | Compare MC Dropout against ensembles and conformal methods under shared stress tests. | Candidate |
+| Top-K allocation | Is the ranking policy compatible with the uncertainty output? | Ranking by predicted mean may ignore interval quality, tail risk, and review thresholds. | Compare mean, upper-quantile, risk-averse, and abstention policies. | Design uncertainty-aware allocation and review policies. | Candidate |
+| lambda risk-aversion coefficient | Is lambda connected to an interpretable risk preference? | A tuned coefficient may not correspond to a meaningful operational trade-off. | Sweep lambda and report cost, tail risk, review rate, and constraint violations. | Reparameterize risk preference through explicit decision costs or CVaR targets. | Candidate |
+| Gaussian noise | Is the corruption protocol too artificial? | Gaussian noise may not represent missingness, spike anomalies, station shift, or extreme events. | Compare Gaussian noise with spike anomalies, missingness, temporal shift, and extreme-event subsets. | Build a shift taxonomy with operationally meaningful severity levels. | Candidate |
+| PM2.5 application | Is the environmental framing scientifically meaningful, or is the dataset being used only as a benchmark? | A benchmark-only framing may miss domain constraints, extreme events, and interpretation needs. | Document scientific assumptions, station behavior, and failure cases before advisor-facing claims. | Connect reliability evaluation to environmental forecasting decisions and limitations. | Candidate |
