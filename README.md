@@ -1,4 +1,4 @@
-# Reliable-AI-Research-Lab
+﻿# Reliable-AI-Research-Lab
 
 ## Purpose
 
@@ -12,6 +12,27 @@ should influence downstream decisions.
 
 Reliable Spatiotemporal Forecasting under Dynamic Distribution Shift:
 Calibration, Uncertainty Quantification, and Risk-Aware Decision-Making
+
+## Project Core
+
+Objective:
+
+Build a reproducible prototype for spatiotemporal forecasting reliability
+under dynamic distribution shift, combining baseline forecasting,
+uncertainty quantification, conformal calibration, shift stress testing,
+and risk-aware decision evaluation.
+
+Core public modules:
+
+* forecasting baseline with DCRNN or STGCN
+* uncertainty quantification with MC Dropout and ensemble or quantile methods
+* conformal calibration for multi-step and shifted settings
+* dynamic distribution shift stress tests
+* risk-aware decision evaluation
+* technical reporting through notes, tables, figures, and a short report
+
+The active 8-week execution roadmap is maintained in
+`projects/reliable_spatiotemporal_forecasting/reports/8-week-execution-plan.md`.
 
 ## Research Approach
 
@@ -32,6 +53,7 @@ selective adaptation of prior ideas.
 * research questions and falsifiable hypotheses defined
 * dataset-selection review in progress
 * model relearning stage in progress
+* 8-week public roadmap defined
 * no claimed experimental results yet
 
 ## Relationship to Other Repositories

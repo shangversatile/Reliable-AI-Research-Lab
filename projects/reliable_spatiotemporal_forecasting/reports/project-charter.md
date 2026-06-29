@@ -1,8 +1,17 @@
-# Project Charter
+﻿# Project Charter
 
 ## Project Motivation
 
-The project studies whether spatiotemporal forecasting models remain reliable when environmental data experience noise, anomalies, missingness, and temporal distribution shift.
+The project studies whether spatiotemporal forecasting models remain reliable
+when environmental data experience noise, anomalies, missingness, temporal
+shift, and changing regimes.
+
+## Project Objective
+
+Build a reproducible prototype for spatiotemporal forecasting reliability
+under dynamic distribution shift, combining baseline forecasting,
+uncertainty quantification, conformal calibration, shift stress testing,
+and risk-aware decision evaluation.
 
 ## Research Reboot Positioning
 
@@ -34,7 +43,7 @@ Does prediction-reconstruction multi-task learning improve latent representation
 
 RQ1-RQ4 belong to the MVP.
 
-RQ5 belongs to the Week 7 extension.
+RQ5 belongs to a gated extension.
 
 ## Falsifiable Hypotheses
 
@@ -52,7 +61,37 @@ Prediction-reconstruction learning may improve representation stability without 
 
 H1-H3 belong to the MVP.
 
-H4 belongs to the Week 7 extension.
+H4 belongs to a gated extension.
+
+## Core Modules
+
+### Forecasting Baseline
+
+DCRNN or STGCN on traffic / PM2.5-style data with MAE / RMSE baseline tables.
+
+### Uncertainty Quantification
+
+MC Dropout, Deep Ensemble or Quantile Regression, interval width, coverage,
+and CRPS where feasible.
+
+### Conformal Calibration
+
+Split conformal / conformal wrapper, multi-step coverage, coverage degradation
+under shift, and change-point experiment.
+
+### Dynamic Distribution Shift
+
+Synthetic change point, temporal shift, missingness, noise, and spike corruption.
+
+### Risk-Aware Decision Evaluation
+
+Top-K allocation regret, selective risk, abstention or review-rate option,
+and decision-cost comparison.
+
+### Technical Reporting
+
+Paper notes, experiment tables, reliability figures, a 6-8 page technical
+report, and a 1-page public project summary.
 
 ## Dataset
 
@@ -77,23 +116,58 @@ No MVP dataset is locked yet.
 
 ## Models
 
-Persistence, Historical Average, Vanilla STGCN, DCRNN, and Robust-STGCN only after the baseline pipeline is reliable.
+Persistence, Historical Average, Vanilla STGCN, DCRNN, and Robust-STGCN only
+after the baseline pipeline is reliable.
 
 ## Shift Definitions
 
-Gaussian noise, spike anomalies, missingness, and temporal shift.
+Synthetic change point, Gaussian noise, spike anomalies, missingness, and temporal shift.
 
-## UQ Methods
+## UQ and Calibration Methods
 
-MC Dropout, Deep Ensemble, and Split Conformal Prediction.
+MC Dropout, Deep Ensemble, Quantile Regression where feasible, Split Conformal
+Prediction, multi-step conformal calibration, and change-point-aware conformal
+forecasting.
 
 ## Evaluation Metrics
 
-MAE, RMSE, MAPE, coverage, coverage gap, interval width, sharpness, CRPS, WIS or Winkler Score, quantile calibration error, coverage rate, selective risk, risk–coverage curve, AURC, review rate, average decision cost, under-allocation cost, over-allocation cost, tail risk, CVaR, constraint violation rate, and runtime.
+MAE, RMSE, MAPE, coverage, coverage gap, interval width, sharpness, CRPS,
+WIS or Winkler Score, quantile calibration error, coverage rate, selective risk,
+risk-coverage curve, AURC, review rate, average decision cost,
+under-allocation cost, over-allocation cost, tail risk, CVaR,
+constraint violation rate, Top-K allocation regret, and runtime.
 
 ## Decision Task
 
-Compare Mean Policy, Risk-Averse Policy, Upper-Quantile Policy, and simplified abstention or human-review policy under clean and shifted conditions.
+Compare Mean Policy, Risk-Averse Policy, Upper-Quantile Policy, Top-K allocation,
+and simplified abstention or human-review policy under clean and shifted conditions.
+
+## Public Literature Roadmap
+
+### Reproduction Priority
+
+* Quantifying Uncertainty in Deep Spatiotemporal Forecasting
+* DCRNN or STGCN baseline
+* Copula Conformal Prediction for Multi-Step Time-Series Forecasting
+* Conformal Prediction for Time Series with Change Points / CPTC
+
+### Deep Reading Priority
+
+* Provably Robust Conformal Prediction with Improved Efficiency
+* Evaluating Neuron Explanations
+* Prediction without Preclusion
+* U-Cast
+
+### Later Extensions
+
+* SPACY
+* Koopman Neural Forecaster
+* Spherical DYffusion
+* Zephyrus
+* forecast-to-control literature
+* causal data audit literature
+* LLM / RAG / agent reliability literature as separate line
+* AI systems literature as separate line
 
 ## MVP Scope
 
@@ -103,11 +177,17 @@ the dataset-selection gate.
 
 ## Stretch Goals
 
-Quantile regression, copula conformal prediction, change-point adaptation, station holdout, extreme-event subset, prediction-reconstruction multi-task learning, representation-stability diagnostics, and traffic-dataset external validation.
+Copula conformal prediction, change-point adaptation, station holdout,
+extreme-event subset, prediction-reconstruction multi-task learning,
+representation-stability diagnostics, traffic-dataset external validation,
+latent causal mechanism shift, climate forecasting extension, and
+forecast-to-control extension.
 
 ## Stop Conditions
 
-Stop or rescope if split logic cannot be verified, metrics cannot be reproduced, corruption protocols are ambiguous, or baseline results cannot be traced to fixed seeds and configuration records.
+Stop or rescope if split logic cannot be verified, metrics cannot be reproduced,
+corruption protocols are ambiguous, or baseline results cannot be traced to fixed
+seeds and configuration records.
 
 ## Deliverables
 
@@ -117,12 +197,13 @@ Stop or rescope if split logic cannot be verified, metrics cannot be reproduced,
 * reproducible baseline protocol
 * baseline metrics table
 * UQ and calibration report
+* conformal wrapper report
 * shift stress-test report
 * decision-reliability report
 * failure analysis
-* six core figures
-* one-page project summary
-* research-style short report
-* external-facing project summaries
-* research-positioning evidence packet
-* Week 7 representation-stability extension only if justified by MVP evidence
+* reliability figures
+* paper notes
+* experiment tables
+* 6-8 page technical report
+* 1-page public project summary
+* gated representation-stability extension only if justified by MVP evidence
